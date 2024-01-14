@@ -1,0 +1,9 @@
+def vowel_count(word):
+    vowels = 'aeiou'
+    counts = sum(word.count(vowel) for vowel in vowels)   
+    return counts
+    # print(f"The word is: {word} \nThe count is: {counts}")
+   
+ 
+word = input('Please enter a word.').lower() 
+print(f"The word is: {word} \nThe count is: {vowel_count(word)}")
