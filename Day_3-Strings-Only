@@ -1,0 +1,14 @@
+def vowel_count():
+    vowels = 'aeiou'
+    
+    word = input('Please enter a word: ')
+    
+    while any(char.isdigit() for char in word):
+        print('You entered a number, please enter a word')
+        word = input('Enter a word: ').lower()
+
+    count = sum(word.count(vowel) for vowel in vowels)
+    print(f'The word is: {word}')
+    return count
+counts = vowel_count()
+print(f'The number of vowels: {counts}')
